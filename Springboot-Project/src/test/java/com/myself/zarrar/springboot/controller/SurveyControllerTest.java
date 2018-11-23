@@ -26,7 +26,7 @@ import com.myself.zarrar.springboot.model.Question;
 import com.myself.zarrar.springboot.survey.SurveyService;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(SurveyController.class)
+@WebMvcTest(value=SurveyController.class, secure=false)
 public class SurveyControllerTest {
 	
 	@Autowired
